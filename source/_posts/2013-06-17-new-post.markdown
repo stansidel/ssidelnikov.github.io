@@ -1,0 +1,15 @@
+---
+layout: post
+title: "New post"
+date: 2013-06-17 23:27
+comments: true
+categories: 
+---
+# Some title
+
+This is text
+
+And here's a list:
+
+* Item
+* Item
