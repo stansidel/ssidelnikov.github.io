@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://ssidelnikov.github.io/atom.xml" rel="self"/>
   <link href="http://ssidelnikov.github.io/"/>
-  <updated>2013-06-17T23:33:13+06:00</updated>
+  <updated>2013-06-17T23:35:02+06:00</updated>
   <id>http://ssidelnikov.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -24,6 +24,8 @@
 
 <!-- more -->
 
+
+<p>More</p>
 
 <p>And here&rsquo;s a list:</p>
 
