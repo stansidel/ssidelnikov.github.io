@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://ssidelnikov.github.io/sitemap.xml 
+Sitemap: http://en.ssidelnikov.ru/sitemap.xml 
