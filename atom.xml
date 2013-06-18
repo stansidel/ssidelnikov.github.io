@@ -4,7 +4,7 @@
   <title><![CDATA[Crazy Economist's Blog]]></title>
   <link href="http://en.ssidelnikov.ru/atom.xml" rel="self"/>
   <link href="http://en.ssidelnikov.ru/"/>
-  <updated>2013-06-18T20:16:00+06:00</updated>
+  <updated>2013-06-18T20:16:56+06:00</updated>
   <id>http://en.ssidelnikov.ru/</id>
   <author>
     <name><![CDATA[Stan S]]></name>
@@ -12,20 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[keep_on_reading]]></title>
-    <link href="http://en.ssidelnikov.ru/blog/2013/06/keep-on-reading/"/>
-    <updated>2013-06-18T20:15:00+06:00</updated>
-    <id>http://en.ssidelnikov.ru/blog/2013/06/keep-on-reading</id>
-    <content type="html"><![CDATA[<p>This is some test article.</p>
-
-<!-- more Keep on reading -->
-
-
-<p>This is under the &ldquo;Read On&rdquo; named differently.</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hello Octopress]]></title>
