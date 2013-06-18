@@ -92,6 +92,42 @@
 
 
 <div class="entry-content"><p>They say sites with different languages should be separate. They also say the sites should be fast. Well, then my Eng version of the site would be on Octopress.</p>
+
+<!-- more -->
+
+
+<p>Ok, they&rsquo;ve described how to set up a fresh new blog with the Github Pages quite well. But there&rsquo;s no guide on how to make it work after git clone on a new machine.
+So here&rsquo;s the answer:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">cd</span> ~/my_root_folder/
+</span><span class='line'><span class="nv">$ </span>git clone git@github.com:username/username.github.io.git -b <span class="nb">source </span>my_blog
+</span><span class='line'><span class="nv">$ </span><span class="nb">cd </span>my_blog
+</span><span class='line'><span class="nv">$ </span>git clone git@github.com:username/username.github.io.git -b master _deploy
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And then as usuall, make changes to the files like <code>rake new["My super awesome new blog entry"]</code> and:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c"># In ~/my_root_folder/my_blog/</span>
+</span><span class='line'><span class="nv">$ </span>rake generate
+</span><span class='line'><span class="nv">$ </span>rake deploy
+</span><span class='line'><span class="c"># The changes from your _deploy dir goes to the server (committed and pushed)</span>
+</span><span class='line'><span class="nv">$ </span>git add .
+</span><span class='line'><span class="nv">$ </span>git commit -m <span class="s2">&quot;An awesome entry added&quot;</span>
+</span><span class='line'><span class="nv">$ </span>git push origin <span class="nb">source</span>
+</span></code></pre></td></tr></table></div></figure>
+
 </div>
 
 
