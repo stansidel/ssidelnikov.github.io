@@ -4,7 +4,7 @@
   <title><![CDATA[Crazy Economist's Blog]]></title>
   <link href="http://en.ssidelnikov.ru/atom.xml" rel="self"/>
   <link href="http://en.ssidelnikov.ru/"/>
-  <updated>2013-06-18T19:53:51+06:00</updated>
+  <updated>2013-06-18T19:54:46+06:00</updated>
   <id>http://en.ssidelnikov.ru/</id>
   <author>
     <name><![CDATA[Stan S]]></name>
@@ -54,25 +54,6 @@ So here&rsquo;s the answer:</p>
 </span><span class='line'><span class="nv">$ </span>git commit -m <span class="s2">&quot;An awesome entry added&quot;</span>
 </span><span class='line'><span class="nv">$ </span>git push origin <span class="nb">source</span>
 </span></code></pre></td></tr></table></div></figure>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[New post]]></title>
-    <link href="http://en.ssidelnikov.ru/blog/2013/06/new-post/"/>
-    <updated>2013-06-17T23:27:00+06:00</updated>
-    <id>http://en.ssidelnikov.ru/blog/2013/06/new-post</id>
-    <content type="html"><![CDATA[<h1>Some title</h1>
-
-<p>This is text</p>
-
-<p>And here&rsquo;s a list:</p>
-
-<ul>
-<li>Item</li>
-<li>Item</li>
-</ul>
 
 ]]></content>
   </entry>
