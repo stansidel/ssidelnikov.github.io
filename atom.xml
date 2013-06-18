@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Abnormal Economist's Blog]]></title>
+  <title><![CDATA[Crazy Economist's Blog]]></title>
   <link href="http://en.ssidelnikov.ru/atom.xml" rel="self"/>
   <link href="http://en.ssidelnikov.ru/"/>
-  <updated>2013-06-18T17:35:23+06:00</updated>
+  <updated>2013-06-18T17:38:36+06:00</updated>
   <id>http://en.ssidelnikov.ru/</id>
   <author>
     <name><![CDATA[Stan S]]></name>
