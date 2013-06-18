@@ -20,7 +20,7 @@ $ cd my_blog
 $ git clone git@github.com:username/username.github.io.git -b master _deploy
 ```
 
-And then as usuall, make changes to the files like `rake new["My super awesome new blog entry"]` and:
+And then as usuall, make changes to the files like `rake new_post["My super awesome new blog entry"]` and:
 
 ```bash
 # In ~/my_root_folder/my_blog/
