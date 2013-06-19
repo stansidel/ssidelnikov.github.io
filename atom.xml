@@ -4,7 +4,7 @@
   <title><![CDATA[Crazy Economist's Blog]]></title>
   <link href="http://en.ssidelnikov.ru/atom.xml" rel="self"/>
   <link href="http://en.ssidelnikov.ru/"/>
-  <updated>2013-06-19T15:36:33+06:00</updated>
+  <updated>2013-06-19T16:10:42+06:00</updated>
   <id>http://en.ssidelnikov.ru/</id>
   <author>
     <name><![CDATA[Stan S]]></name>
@@ -53,6 +53,15 @@ So here&rsquo;s the answer:</p>
 </span><span class='line'><span class="nv">$ </span>git add .
 </span><span class='line'><span class="nv">$ </span>git commit -m <span class="s2">&quot;An awesome entry added&quot;</span>
 </span><span class='line'><span class="nv">$ </span>git push origin <span class="nb">source</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To make it easier to deploy and commit source changes you could add some aliases (thanks to the <a href="http://www.cyberciti.biz/faq/linux-unix-pass-argument-to-alias-command/">article</a>) to your ~/.bash_profile (or ~/.zprofile):</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>scommit<span class="o">()</span> <span class="o">{</span>git add . <span class="o">&amp;&amp;</span> git commit -m <span class="se">\&quot;</span><span class="nv">$@</span><span class="se">\&quot;</span> <span class="o">&amp;&amp;</span> git push<span class="o">}</span>
+</span><span class='line'><span class="nb">alias </span><span class="nv">bdeploy</span><span class="o">=</span><span class="s2">&quot;rake generate &amp;&amp; rake deploy&quot;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
