@@ -36,5 +36,5 @@ To make it easier to deploy and commit source changes you could add some aliases
 
 ```bash
 scommit() {git add . && git commit -m \"$@\" && git push}  
-alias bdeploy="rake generate $$ rake deploy"
+alias bdeploy="rake generate && rake deploy"
 ```
