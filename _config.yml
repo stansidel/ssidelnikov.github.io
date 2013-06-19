@@ -99,5 +99,6 @@ google_analytics_tracking_id:
 # Yandex.Metrika
 yandex_metrika_tracking_id: 21561205
 
+
 # Facebook Like
 facebook_like: false
