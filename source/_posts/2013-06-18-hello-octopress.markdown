@@ -31,3 +31,10 @@ $ git add .
 $ git commit -m "An awesome entry added"
 $ git push origin source
 ```
+
+To make it easier to deploy and commit source changes you could add some aliases (thanks to the [article](http://www.cyberciti.biz/faq/linux-unix-pass-argument-to-alias-command/)) to your ~/.bash\_profile (or ~/.zprofile):
+
+```bash
+scommit() {git add . && git commit -m \"$@\" && git push}  
+alias bdeploy="rake generate $$ rake deploy"
+```
