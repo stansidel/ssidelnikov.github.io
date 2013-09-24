@@ -4,7 +4,7 @@
   <title><![CDATA[Crazy Economist's Blog]]></title>
   <link href="http://en.ssidelnikov.ru/atom.xml" rel="self"/>
   <link href="http://en.ssidelnikov.ru/"/>
-  <updated>2013-09-24T12:01:12+06:00</updated>
+  <updated>2013-09-24T12:03:23+06:00</updated>
   <id>http://en.ssidelnikov.ru/</id>
   <author>
     <name><![CDATA[Stan S]]></name>
@@ -64,6 +64,20 @@ So here&rsquo;s the answer:</p>
 </span><span class='line'><span class="nb">alias </span><span class="nv">bdeploy</span><span class="o">=</span><span class="s2">&quot;rake generate &amp;&amp; rake deploy&quot;</span>
 </span></code></pre></td></tr></table></div></figure>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[First Android App]]></title>
+    <link href="http://en.ssidelnikov.ru/blog/2012/06/first-android-app/"/>
+    <updated>2012-06-15T11:36:00+06:00</updated>
+    <id>http://en.ssidelnikov.ru/blog/2012/06/first-android-app</id>
+    <content type="html"><![CDATA[<p>An image.</p>
+
+<!--more-->
+
+
+<p><img src="http://en.ssidelnikov.ru/images/posts/2013/first-android-app-2013.png"></p>
 ]]></content>
   </entry>
   
