@@ -4,7 +4,7 @@
   <title><![CDATA[Crazy Economist's Blog]]></title>
   <link href="http://en.ssidelnikov.ru/atom.xml" rel="self"/>
   <link href="http://en.ssidelnikov.ru/"/>
-  <updated>2013-09-24T12:10:53+06:00</updated>
+  <updated>2013-09-24T12:15:02+06:00</updated>
   <id>http://en.ssidelnikov.ru/</id>
   <author>
     <name><![CDATA[Stan S]]></name>
@@ -12,22 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Google Maps v2 and Android 2.3.3 (API 10)]]></title>
-    <link href="http://en.ssidelnikov.ru/blog/2013/08/google-maps-v2-and-android-2-3-3-api-10/"/>
-    <updated>2013-08-07T21:28:00+06:00</updated>
-    <id>http://en.ssidelnikov.ru/blog/2013/08/google-maps-v2-and-android-2-3-3-api-10</id>
-    <content type="html"><![CDATA[<p>As you may notice Google Maps v1 for android <a href="https://developers.google.com/maps/documentation/android/v1/">have retired</a>. So the developers are actually forced to move to the new v2 of the maps. Google prepared a great</p>
-
-<p>Useful links:</p>
-
-<ul>
-<li></li>
-</ul>
-
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hello Octopress]]></title>
@@ -80,22 +64,6 @@ So here&rsquo;s the answer:</p>
 </span><span class='line'><span class="nb">alias </span><span class="nv">bdeploy</span><span class="o">=</span><span class="s2">&quot;rake generate &amp;&amp; rake deploy&quot;</span>
 </span></code></pre></td></tr></table></div></figure>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[First Android App]]></title>
-    <link href="http://en.ssidelnikov.ru/blog/2012/06/first-android-app/"/>
-    <updated>2012-06-15T11:36:00+06:00</updated>
-    <id>http://en.ssidelnikov.ru/blog/2012/06/first-android-app</id>
-    <content type="html"><![CDATA[<p>An image.</p>
-
-<!--more-->
-
-
-<p>Yep, the image:</p>
-
-<p><img src="http://en.ssidelnikov.ru/images/posts/2012/first-android-app-2013.png"></p>
 ]]></content>
   </entry>
   
