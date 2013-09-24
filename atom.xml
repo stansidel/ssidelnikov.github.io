@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Crazy Economist's Blog]]></title>
+  <link href="http://en.ssidelnikov.ru/atom.xml" rel="self"/>
+  <link href="http://en.ssidelnikov.ru/"/>
+  <updated>2013-09-24T12:01:12+06:00</updated>
+  <id>http://en.ssidelnikov.ru/</id>
+  <author>
+    <name><![CDATA[Stan S]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello Octopress]]></title>
+    <link href="http://en.ssidelnikov.ru/blog/2013/06/hello-octopress/"/>
+    <updated>2013-06-18T14:58:00+06:00</updated>
+    <id>http://en.ssidelnikov.ru/blog/2013/06/hello-octopress</id>
+    <content type="html"><![CDATA[<p>They say sites with different languages should be separate. They also say the sites should be fast. Well, then my Eng version of the site would be on Octopress.</p>
+
+<!-- more -->
+
+
+<p>Ok, they&rsquo;ve described how to set up a fresh new blog with the Github Pages quite well. But there&rsquo;s no guide on how to make it work after git clone on a new machine.
+So here&rsquo;s the answer:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">cd</span> ~/my_root_folder/
+</span><span class='line'><span class="nv">$ </span>git clone git@github.com:username/username.github.io.git -b <span class="nb">source </span>my_blog
+</span><span class='line'><span class="nv">$ </span><span class="nb">cd </span>my_blog
+</span><span class='line'><span class="nv">$ </span>git clone git@github.com:username/username.github.io.git -b master _deploy
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And then as usuall, make changes to the files like <code>rake new_post["My super awesome new blog entry"]</code> and:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c"># In ~/my_root_folder/my_blog/</span>
+</span><span class='line'><span class="nv">$ </span>rake generate
+</span><span class='line'><span class="nv">$ </span>rake deploy
+</span><span class='line'><span class="c"># The changes from your _deploy dir goes to the server (committed and pushed)</span>
+</span><span class='line'><span class="nv">$ </span>git add .
+</span><span class='line'><span class="nv">$ </span>git commit -m <span class="s2">&quot;An awesome entry added&quot;</span>
+</span><span class='line'><span class="nv">$ </span>git push origin <span class="nb">source</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To make it easier to deploy and commit source changes you could add some aliases (thanks to the <a href="http://www.cyberciti.biz/faq/linux-unix-pass-argument-to-alias-command/">article</a>) to your ~/.bash_profile (or ~/.zprofile):</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>scommit<span class="o">()</span> <span class="o">{</span>git add . <span class="o">&amp;&amp;</span> git commit -m <span class="se">\&quot;</span><span class="nv">$@</span><span class="se">\&quot;</span> <span class="o">&amp;&amp;</span> git push<span class="o">}</span>
+</span><span class='line'><span class="nb">alias </span><span class="nv">bdeploy</span><span class="o">=</span><span class="s2">&quot;rake generate &amp;&amp; rake deploy&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+</feed>
