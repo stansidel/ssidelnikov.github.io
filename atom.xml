@@ -4,7 +4,7 @@
   <title><![CDATA[Crazy Economist's Blog]]></title>
   <link href="http://en.ssidelnikov.ru/atom.xml" rel="self"/>
   <link href="http://en.ssidelnikov.ru/"/>
-  <updated>2013-09-24T12:08:36+06:00</updated>
+  <updated>2013-09-24T12:10:53+06:00</updated>
   <id>http://en.ssidelnikov.ru/</id>
   <author>
     <name><![CDATA[Stan S]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Google Maps v2 and Android 2.3.3 (API 10)]]></title>
+    <link href="http://en.ssidelnikov.ru/blog/2013/08/google-maps-v2-and-android-2-3-3-api-10/"/>
+    <updated>2013-08-07T21:28:00+06:00</updated>
+    <id>http://en.ssidelnikov.ru/blog/2013/08/google-maps-v2-and-android-2-3-3-api-10</id>
+    <content type="html"><![CDATA[<p>As you may notice Google Maps v1 for android <a href="https://developers.google.com/maps/documentation/android/v1/">have retired</a>. So the developers are actually forced to move to the new v2 of the maps. Google prepared a great</p>
+
+<p>Useful links:</p>
+
+<ul>
+<li></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hello Octopress]]></title>
