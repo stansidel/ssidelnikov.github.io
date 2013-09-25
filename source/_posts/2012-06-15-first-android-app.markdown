@@ -39,7 +39,7 @@ When a card number is entered the client has an option to pay for the order part
 
 If the client decided to pay for the order with bonuses, the app immidiately withdraws the required amount from the card balance in the central database through the web service provided by 1C system. The detailed information about the sale is written to another central 1C based database.
 
-{%imgcap center /images/posts/2012/first-android-app-7-links.png Links of the app with other software of the company %}
+{%imgcap center /images/posts/2012/first-android-app-7-links.svg Links of the app with other software of the company %}
 
 The app has some settings:
 
