@@ -4,7 +4,7 @@
   <title><![CDATA[Crazy Economist's Blog]]></title>
   <link href="http://en.ssidelnikov.ru/atom.xml" rel="self"/>
   <link href="http://en.ssidelnikov.ru/"/>
-  <updated>2013-09-25T16:09:08+06:00</updated>
+  <updated>2013-09-25T16:11:10+06:00</updated>
   <id>http://en.ssidelnikov.ru/</id>
   <author>
     <name><![CDATA[Stan S]]></name>
@@ -85,13 +85,13 @@ So here&rsquo;s the answer:</p>
 
 <p>The app displays the list of goods divided by their groups for easier look up for the needed item. The lists shows the name and price for each item.</p>
 
-<p><img src="http://en.ssidelnikov.ru/images/posts/2012/first-android-app-1.jpg" width="598" title="&#34;Goods (blue border) and groups (white border)&#34;" alt="&#34;Goods (blue border) and groups (white border)&#34;"></p>
+<p><span class='caption-wrapper'><img src="http://en.ssidelnikov.ru/images/posts/2012/first-android-app-1.jpg" title="Goods (blue border) and groups (white border)" ><span class='caption-text'>Goods (blue border) and groups (white border)</span></span></p>
 
 <p>The main feature of the app is to compose an order with both piece-goods and weight goods. For piece-goods the operator simply enters its number by means of the + and &ndash; buttons. For weight items, they need to enter the weight with the virtual keyboard. As the items are added and deleted fromt the order, the total price without discounts is displayed.</p>
 
 <p><span class='caption-wrapper'><img src="http://en.ssidelnikov.ru/images/posts/2012/first-android-app-2-order.jpg" title="Order with three items" ><span class='caption-text'>Order with three items</span></span></p>
 
-<p><img src="http://en.ssidelnikov.ru/images/posts/2012/first-android-app-3-weight.jpg" title="A request for the item weight" ></p>
+<p><span class='caption-wrapper'><img src="http://en.ssidelnikov.ru/images/posts/2012/first-android-app-3-weight.jpg" title="A request for the item weight" ><span class='caption-text'>A request for the item weight</span></span></p>
 
 <p>The app can also deal with the clients&#8217; cards, applying discounts accrodingly. To apply a card to the order, operator enters its number in a special popup window.</p>
 
