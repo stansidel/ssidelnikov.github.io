@@ -4,10 +4,10 @@ title: "First Android App"
 date: 2012-06-15 11:36
 comments: true
 categories: 
-published: false
+published: true
 ---
 
-I've finished a beta of my first Android app for internal use, a front office system for the Cafe owned by our company. It has 6 thousands of lines of code, I've spent 170 hours of immidiate development for it.
+I've finished a beta of my first Android app for internal use, a front office system for the Cafe owned by our company. It has 6 thousands lines of code, I've spent 170 hours for immidiate development of it.
 
 <!--more-->
 
@@ -21,46 +21,49 @@ The app displays the list of goods divided by their groups for easier look up fo
 
 {%imgcap /images/posts/2012/first-android-app-1.jpg Goods (blue border) and groups (white border) %}
 
-Формировать заказ по наименованиям и количествам. В заказ могут быть добавлены как штучные товары (регулирование количества осуществляется кнопками +/-), так и весовые (ввод количества с клавиатуры). По мере формирования заказа отображается его итоговая сумма без учета скидок.
+The main feature of the app is to compose an order with both piece-goods and weight goods. For piece-goods the operator simply enters its number by means of the + and - buttons. For weight items, they need to enter the weight with the virtual keyboard. As the items are added and deleted fromt the order, the total price without discounts is displayed.
 
-{%imgcap /images/posts/2012/first-android-app-2-order.jpg Заказ из трех позиций %}
+{%imgcap /images/posts/2012/first-android-app-2-order.jpg Order with three items %}
 
-{%imgcap /images/posts/2012/first-android-app-3-weight.jpg Запрос количества для весового товара %}
+{%imgcap /images/posts/2012/first-android-app-3-weight.jpg A request for the item weight %}
 
-Учитывать карты клиента и, соответственно, расчет скидки по карте при оплате заказа. Карту указывают путем ввода ее номера в специальном окне. В дальнейшем планируется определять карту по штрих-коду.
+The app can also deal with the clients' cards, applying discounts accrodingly. To apply a card to the order, operator enters its number in a special popup window.
 
-{%imgcap /images/posts/2012/first-android-app-4-card-number.jpg Запрос номера карты %}
+{%imgcap /images/posts/2012/first-android-app-4-card-number.jpg Card number request %}
 
-{%imgcap /images/posts/2012/first-android-app-5-payment.jpg Окно оплаты при запросе баланса и при нулевом балансе %}
+{%imgcap /images/posts/2012/first-android-app-5-payment.jpg Payment window when the card balance is zero %}
 
-Предоставлять возможность оплаты части заказа бонусами по карте клиента. Оплата осуществляется в размере, не превышающем определенный процент от суммы заказа. Оплата бонусами возможна по курсу, отличному от 1 к 1.
+When a card number is entered the client has an option to pay for the order partly with their bonuses. The maximum bonus payment is calculated as a constant percentage of the order value. There's also an option to use a bonus rate other than 1 to 1.
 
-{%imgcap /images/posts/2012/first-android-app-6-payment-plus.jpg Окно оплаты при положительном балансе %}
+{%imgcap /images/posts/2012/first-android-app-6-payment-plus.jpg Payment window with some positive card balance %}
 
-Списывать бонусы с карты через веб-сервис 1С в момент оплаты заказа.
-Записывать детальную информацию о продаже в базу приложения и в базу 1С через веб-сервис.
+If the client decided to pay for the order with bonuses, the app immidiately withdraws the required amount from the card balance in the central database through the web service provided by 1C system. The detailed information about the sale is written to another central 1C based database.
 
-{%imgcap /images/posts/2012/first-android-app-7-links.png Связи приложения с другими системами %}
+{%imgcap center /images/posts/2012/first-android-app-7-links.png Links of the app with other software of the company %}
 
-В настройки вынесены:
-* Выбор способа загрузки номенклатуры: FTP или веб-сервис.
-* Параметры сервера FTP.
-* Адреса веб-сервисов: для загрузки номенклатуры и для работы с бонусами.
-* Процент скидки по карте клиента.
-* Код текущего подразделения, осуществляющего продажи.
-* Максимальный процент от суммы заказа, который можно оплатить бонусами.
-* Курс (ставка) бонусов.
+The app has some settings:
 
-## Технические детали
+* Goods information transport: FTP or web service.
+* FTP server params.
+* Web servers URLs: for goods import and bonuses info exchange.
+* Clients cards default discount rate.
+* Current department code.
+* Maximum percantage of the order value for calculation of bonus payment limits.
+* Bonus payments rate.
 
-При разработке приложения, в общем-то, проблем, которые бы не удалось быстро решить, практически не возникало. На мой взгляд, только два момента заслуживают внимания:
+## Technical details
 
-При работе с одной базой SQLite в Android нужно использовать только один OpenHelper. Это открытие было сделано, когда уже существовали два хелпера, используемых в разных частях приложения. Пришлось потратить часа 4, чтобы эту ситуацию исправить.
-Много времени потратил, чтобы заставить свое приложение подружиться с веб-сервисами 1С. В принципе, с этой задачей отлично справляется библиотека ksoap2-android, когда мы работаем с простыми типами данных. Когда же нам нужно передавать массивы (список номенклатуры, проданной одним чеком), то дружба с 1С заканчивается. Решение проблемы я описал на хабре. Еще одна вещь, которую нужно учитывать при работе с веб-сервисами 1С из приложения на Android – все имена в веб-сервисе должны быть написаны на латинице. Во всяком случае мне не удалось заставить работать Android с русскими именами – веб-сервис упорно отвечал 500-ой ошибкой, хотя визуально запросы формировались правильно.
-Для тестирования приложения я использовал Robolectric, очень интересная и удобная вещь. Замечательная вещь, сокращающая количество строк кода тестов и высвобождающая время – Mockito, используемая для имитации зависимостей (mock the dependencies). В идеале еще можно использовать Robotium для приемочного тестирования, но для текущего проекта не нашел времени добавить его. Я сейчас только начинаю применять подход TDD, достаточно интересно, хотя и сложно… применять его правильно. Нужно понять, что и как нужно тестировать, а это приходит, видимо, только с практикой. Трекинг требований и ошибок в приложении осуществляется с помощью FogBugz. Там же удобно вести учет времени работы над каждой задачей, особенно при использовании Eclipse. У него есть замечательный коннектор к FogBugz, который отмечает начало и окончание работы над задачей. FogBugz же уже сам вычисляет, сколько времени было затрачено на задачу, учитывая расписание работы программиста. Код приложения хранится в Kiln, связанном с FogBugz. Все коммиты можно “соединять” с задачами, чтобы потом легче было понять, что же было сделано для ее решения. Для разработки также пробовал IntelliJ IDEA, про которую можно найти много очень лестных отзывов. Я считаю, что она очень хороша, но Eclipse мне нравится больше. Автодополнение кода у них, на мой взгляд, работает примерно одинаково, но у Eclipse есть несколько дополнительных приятных фишек, таких как, например, тесная интеграция с FogBugz.
+There were actually no obstacles we couldn't solve in little time. I think, there're only two points worth mentioning:
 
-## Заключение
+1. When working with an SQLite databes in Android you should you [only one OpenHelper](http://stackoverflow.com/questions/2244965/having-several-sqliteopenhelper-in-one-appli-android). I realised this when already implemented two helpers used in different parts of the app. Fixed it up in 4 hours. Not too much, but would better not make such pitty mistakes.
+2. I've spent a lot of time making the app work with the 1C web service together. In fact the [ksoap2-android](http://code.google.com/p/ksoap2-android/) library getting with all this stuff very well until we deal with some complex data structures such as an array of order goods. I described a solution for dealing with complex data structures over SOAP on [habr](http://habrahabr.ru/post/145389/) (RU).
 
-Первый вариант готов. Сейчас наступает период полевых испытаний непосредственно в кафе, не менее интересный этап, чем непосредственно разработка. Надеюсь на успешное его протекание :)
+I used [Robolectric](http://pivotal.github.com/robolectric/) as a testing framework which turned out to be a really interesting and handy thing. Another great stuff that helps considerably lower number of lines of code is [Mockito](https://code.google.com/p/mockito/). This is a dependency mocking framework. In an ideal world you'd probably also use [Robotium](http://code.google.com/p/robotium/) for the integration testing, but I didn't get enough time for using this tool in the project.
 
-Update 01.04.2012. Приложение работает. Не идеально, но работает :) Решил выложить исходники, все равно никто его не развивает, да и в них кода не так много интересного и супер-сложного: сами исходники и тесты для приложения.
+I used [FogBugz](http://www.fogcreek.com/fogbugz/) for task (and bugs) management. That's the best tool I've ever found that offers a great time tracking feature, esp if you're working in Eclipse. This IDE has a great plugin for the FogBugz service, and it gets all the headaches about time tracking from you. Just tell it what you're working on now, and it does the rest of the job.
+
+## Conclusion
+
+The first snap is ready. It's time for the first "field tests" in the Cafe. That's by no means a less interesting and exciting stage than the development itself. Hope everything went smoothly :)
+
+Update 01.04.2013. The app is working. It's not perfect, but working :) I decided to open the sources since the app is now not developing, and the very sources doesn't have any world shaking code: [app sources](https://bitbucket.org/ssidelnikov/cafe-android) and [tests sources](https://bitbucket.org/ssidelnikov/cafe-android-tests).
