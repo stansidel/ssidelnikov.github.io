@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>First Android App - Crazy Economist's Blog</title>
+  <meta name="author" content="Stan S">
+
+  
+  <meta name="description" content="I&rsquo;ve finished a beta of my first Android app for internal use, a front office system for the Cafe owned by our company. It has 6 thousands &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://en.ssidelnikov.ru/2012/06/first-android-app">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Crazy Economist's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-24182259-5']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+  
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+          w.yaCounter21561205 = new Ya.Metrika({id:21561205,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/21561205" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Crazy Economist's Blog</a></h1>
+  
+    <h2>My thoughts and experience</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:en.ssidelnikov.ru" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">First Android App</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-15T11:36:00+06:00" pubdate data-updated="true">Jun 15<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I&rsquo;ve finished a beta of my first Android app for internal use, a front office system for the Cafe owned by our company. It has 6 thousands lines of code, I&rsquo;ve spent 170 hours for immidiate development of it.</p>
+
+<!--more-->
+
+
+<h2>App Features</h2>
+
+<p>So, what the app can do?</p>
+
+<p>It can load a list of goods through FTP or 1C web service. It consumes the following data: name of the item, its group, price and a weight goods tag.</p>
+
+<p>The app displays the list of goods divided by their groups for easier look up for the needed item. The lists shows the name and price for each item.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/posts/2012/first-android-app-1.jpg' width='' height='' title='Goods (blue border) and groups (white border)'><span class='caption-text'>Goods (blue border) and groups (white border)</span></span></p>
+
+<p>The main feature of the app is to compose an order with both piece-goods and weight goods. For piece-goods the operator simply enters its number by means of the + and &ndash; buttons. For weight items, they need to enter the weight with the virtual keyboard. As the items are added and deleted fromt the order, the total price without discounts is displayed.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/posts/2012/first-android-app-2-order.jpg' width='' height='' title='Order with three items'><span class='caption-text'>Order with three items</span></span></p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/posts/2012/first-android-app-3-weight.jpg' width='' height='' title='A request for the item weight'><span class='caption-text'>A request for the item weight</span></span></p>
+
+<p>The app can also deal with the clients&#8217; cards, applying discounts accrodingly. To apply a card to the order, operator enters its number in a special popup window.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/posts/2012/first-android-app-4-card-number.jpg' width='' height='' title='Card number request'><span class='caption-text'>Card number request</span></span></p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/posts/2012/first-android-app-5-payment.jpg' width='' height='' title='Payment window when the card balance is zero'><span class='caption-text'>Payment window when the card balance is zero</span></span></p>
+
+<p>When a card number is entered the client has an option to pay for the order partly with their bonuses. The maximum bonus payment is calculated as a constant percentage of the order value. There&rsquo;s also an option to use a bonus rate other than 1 to 1.</p>
+
+<p><span class='caption-wrapper'><img class='caption' src='/images/posts/2012/first-android-app-6-payment-plus.jpg' width='' height='' title='Payment window with some positive card balance'><span class='caption-text'>Payment window with some positive card balance</span></span></p>
+
+<p>If the client decided to pay for the order with bonuses, the app immidiately withdraws the required amount from the card balance in the central database through the web service provided by 1C system. The detailed information about the sale is written to another central 1C based database.</p>
+
+<p><span class='caption-wrapper center'><img class='caption' src='/images/posts/2012/first-android-app-7-links.png' width='' height='' title='Links of the app with other software of the company'><span class='caption-text'>Links of the app with other software of the company</span></span></p>
+
+<p>The app has some settings:</p>
+
+<ul>
+<li>Goods information transport: FTP or web service.</li>
+<li>FTP server params.</li>
+<li>Web servers URLs: for goods import and bonuses info exchange.</li>
+<li>Clients cards default discount rate.</li>
+<li>Current department code.</li>
+<li>Maximum percantage of the order value for calculation of bonus payment limits.</li>
+<li>Bonus payments rate.</li>
+</ul>
+
+
+<h2>Technical details</h2>
+
+<p>There were actually no obstacles we couldn&rsquo;t solve in little time. I think, there&rsquo;re only two points worth mentioning:</p>
+
+<ol>
+<li>When working with an SQLite databes in Android you should you <a href="http://stackoverflow.com/questions/2244965/having-several-sqliteopenhelper-in-one-appli-android">only one OpenHelper</a>. I realised this when already implemented two helpers used in different parts of the app. Fixed it up in 4 hours. Not too much, but would better not make such pitty mistakes.</li>
+<li>I&rsquo;ve spent a lot of time making the app work with the 1C web service together. In fact the <a href="http://code.google.com/p/ksoap2-android/">ksoap2-android</a> library getting with all this stuff very well until we deal with some complex data structures such as an array of order goods. I described a solution for dealing with complex data structures over SOAP on <a href="http://habrahabr.ru/post/145389/">habr</a> (RU).</li>
+</ol>
+
+
+<p>I used <a href="http://pivotal.github.com/robolectric/">Robolectric</a> as a testing framework which turned out to be a really interesting and handy thing. Another great stuff that helps considerably lower number of lines of code is <a href="https://code.google.com/p/mockito/">Mockito</a>. This is a dependency mocking framework. In an ideal world you&rsquo;d probably also use <a href="http://code.google.com/p/robotium/">Robotium</a> for the integration testing, but I didn&rsquo;t get enough time for using this tool in the project.</p>
+
+<p>I used <a href="http://www.fogcreek.com/fogbugz/">FogBugz</a> for task (and bugs) management. That&rsquo;s the best tool I&rsquo;ve ever found that offers a great time tracking feature, esp if you&rsquo;re working in Eclipse. This IDE has a great plugin for the FogBugz service, and it gets all the headaches about time tracking from you. Just tell it what you&rsquo;re working on now, and it does the rest of the job.</p>
+
+<h2>Conclusion</h2>
+
+<p>The first snap is ready. It&rsquo;s time for the first &ldquo;field tests&rdquo; in the Cafe. That&rsquo;s by no means a less interesting and exciting stage than the development itself. Hope everything went smoothly :)</p>
+
+<p>Update 01.04.2013. The app is working. It&rsquo;s not perfect, but working :) I decided to open the sources since the app is now not developing, and the very sources doesn&rsquo;t have any world shaking code: <a href="https://bitbucket.org/ssidelnikov/cafe-android">app sources</a> and <a href="https://bitbucket.org/ssidelnikov/cafe-android-tests">tests sources</a>.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Stan S</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-15T11:36:00+06:00" pubdate data-updated="true">Jun 15<span>th</span>, 2012</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://en.ssidelnikov.ru/2012/06/first-android-app/" data-via="" data-counturl="http://en.ssidelnikov.ru/2012/06/first-android-app/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/2013/06/hello-octopress/" title="Next Post: Hello Octopress">Hello Octopress &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/06/hello-octopress/">Hello Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/06/first-android-app/">First Android App</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Stan S -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'en-ssidelnikov';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://en.ssidelnikov.ru/2012/06/first-android-app/';
+        var disqus_url = 'http://en.ssidelnikov.ru/2012/06/first-android-app/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
