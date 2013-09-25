@@ -4,7 +4,7 @@
   <title><![CDATA[Crazy Economist's Blog]]></title>
   <link href="http://en.ssidelnikov.ru/atom.xml" rel="self"/>
   <link href="http://en.ssidelnikov.ru/"/>
-  <updated>2013-09-25T11:00:29+06:00</updated>
+  <updated>2013-09-25T11:05:00+06:00</updated>
   <id>http://en.ssidelnikov.ru/</id>
   <author>
     <name><![CDATA[Stan S]]></name>
@@ -64,28 +64,6 @@ So here&rsquo;s the answer:</p>
 </span><span class='line'><span class="nb">alias </span><span class="nv">bdeploy</span><span class="o">=</span><span class="s2">&quot;rake generate &amp;&amp; rake deploy&quot;</span>
 </span></code></pre></td></tr></table></div></figure>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[First Android App]]></title>
-    <link href="http://en.ssidelnikov.ru/blog/2012/06/first-android-app/"/>
-    <updated>2012-06-15T11:36:00+06:00</updated>
-    <id>http://en.ssidelnikov.ru/blog/2012/06/first-android-app</id>
-    <content type="html"><![CDATA[<p>I&rsquo;ve finished a beta of my first Android app for internal use, a front office system for the Cafe owned by our company. It has 6 thousands of lines of code, I&rsquo;ve spent 170 hours of immidiate development for it.</p>
-
-<!--more-->
-
-
-<h2>App Features</h2>
-
-<p>So, what the app can do?</p>
-
-<p>It can load a list of goods through FTP or 1C web service. It consumes the following data: name of the item, its group, price and a weight goods tag.</p>
-
-<p>The app displays the list of goods divided by their groups for easier look up for the needed item. The lists shows the name and price for each item.</p>
-
-<p><span class='caption-wrapper'><img class='caption' src='http://en.ssidelnikov.ru/images/posts/2012/first-android-app-1.jpg' width='' height='' title='Goods (blue border) and groups (white border)'><span class='caption-text'>Goods (blue border) and groups (white border)</span></span></p>
 ]]></content>
   </entry>
   
